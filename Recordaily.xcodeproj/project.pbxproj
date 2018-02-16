@@ -40,8 +40,6 @@
 		C3B562D11C73ECB1003B4C69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3B562CF1C73ECB1003B4C69 /* Main.storyboard */; };
 		C3B562D61C73ECB1003B4C69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3B562D51C73ECB1003B4C69 /* Assets.xcassets */; };
 		C3B562D91C73ECB1003B4C69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3B562D71C73ECB1003B4C69 /* LaunchScreen.storyboard */; };
-		C3B562E41C73ECB1003B4C69 /* RecordailyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B562E31C73ECB1003B4C69 /* RecordailyTests.m */; };
-		C3B562EF1C73ECB1003B4C69 /* RecordailyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B562EE1C73ECB1003B4C69 /* RecordailyUITests.m */; };
 		C3B563451C73F534003B4C69 /* GlobalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B563441C73F534003B4C69 /* GlobalViewController.m */; };
 		C3B563481C73F576003B4C69 /* GlobalNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B563471C73F576003B4C69 /* GlobalNavigationController.m */; };
 		C3B5634B1C73F59B003B4C69 /* Recordaily.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3B563491C73F59B003B4C69 /* Recordaily.xcdatamodeld */; };
@@ -146,11 +144,7 @@
 		C3B562D81C73ECB1003B4C69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3B562DA1C73ECB1003B4C69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3B562DF1C73ECB1003B4C69 /* RecordailyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecordailyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3B562E31C73ECB1003B4C69 /* RecordailyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordailyTests.m; sourceTree = "<group>"; };
-		C3B562E51C73ECB1003B4C69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3B562EA1C73ECB1003B4C69 /* RecordailyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecordailyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3B562EE1C73ECB1003B4C69 /* RecordailyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordailyUITests.m; sourceTree = "<group>"; };
-		C3B562F01C73ECB1003B4C69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3B563431C73F534003B4C69 /* GlobalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlobalViewController.h; path = Classes/GlobalViewController.h; sourceTree = "<group>"; };
 		C3B563441C73F534003B4C69 /* GlobalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GlobalViewController.m; path = Classes/GlobalViewController.m; sourceTree = "<group>"; };
 		C3B563461C73F576003B4C69 /* GlobalNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlobalNavigationController.h; path = Classes/GlobalNavigationController.h; sourceTree = "<group>"; };
@@ -326,8 +320,6 @@
 			isa = PBXGroup;
 			children = (
 				C3B562C51C73ECB1003B4C69 /* Recordaily */,
-				C3B562E21C73ECB1003B4C69 /* RecordailyTests */,
-				C3B562ED1C73ECB1003B4C69 /* RecordailyUITests */,
 				C3B562C41C73ECB1003B4C69 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -377,24 +369,6 @@
 				C3B562D71C73ECB1003B4C69 /* LaunchScreen.storyboard */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C3B562E21C73ECB1003B4C69 /* RecordailyTests */ = {
-			isa = PBXGroup;
-			children = (
-				C3B562E31C73ECB1003B4C69 /* RecordailyTests.m */,
-				C3B562E51C73ECB1003B4C69 /* Info.plist */,
-			);
-			path = RecordailyTests;
-			sourceTree = "<group>";
-		};
-		C3B562ED1C73ECB1003B4C69 /* RecordailyUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C3B562EE1C73ECB1003B4C69 /* RecordailyUITests.m */,
-				C3B562F01C73ECB1003B4C69 /* Info.plist */,
-			);
-			path = RecordailyUITests;
 			sourceTree = "<group>";
 		};
 		C3B5633E1C73EE49003B4C69 /* Core Date */ = {
@@ -697,7 +671,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3B562E41C73ECB1003B4C69 /* RecordailyTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -705,7 +678,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3B562EF1C73ECB1003B4C69 /* RecordailyUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
