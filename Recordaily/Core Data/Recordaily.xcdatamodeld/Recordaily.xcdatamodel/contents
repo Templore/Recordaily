@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Automatic">
+    <entity name="Color" representedClassName="Color" syncable="YES">
+        <attribute name="colorAlpha" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="colorBlue" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="colorGreen" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="colorName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="colorRed" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="colorOrganizations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Organization" inverseName="organizationColor" inverseEntity="Organization" syncable="YES"/>
+    </entity>
+    <entity name="Location" representedClassName="Location" syncable="YES">
+        <attribute name="locationName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="locationRecords" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Record" inverseName="recordLocation" inverseEntity="Record" syncable="YES"/>
+    </entity>
+    <entity name="Organization" representedClassName="Organization" syncable="YES">
+        <attribute name="organizationDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="organizationName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="organizationColor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Color" inverseName="colorOrganizations" inverseEntity="Color" syncable="YES"/>
+        <relationship name="organizationRecords" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Record" inverseName="recordOrganization" inverseEntity="Record" syncable="YES"/>
+    </entity>
+    <entity name="Record" representedClassName="Record" syncable="YES">
+        <attribute name="recordDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="recordDueDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="recordSectionID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="recordSubject" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordUniqueID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="recordLocation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="locationRecords" inverseEntity="Location" syncable="YES"/>
+        <relationship name="recordOrganization" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Organization" inverseName="organizationRecords" inverseEntity="Organization" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Color" positionX="313" positionY="209" width="128" height="133"/>
+        <element name="Location" positionX="144" positionY="8" width="144" height="73"/>
+        <element name="Organization" positionX="70" positionY="135" width="146" height="103"/>
+        <element name="Record" positionX="-279" positionY="0" width="171" height="148"/>
+    </elements>
+</model>
